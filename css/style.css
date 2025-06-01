@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-color: #0d1b30;
+
+}
+
+/* ESTILOS BASE (PC y pantallas grandes) */
+.titulo {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 130px;
+    color: #EBEBEB;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.subtituloh2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #87B9D7;
+    text-align: center;
+}
+
+.subtituloh3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #87B9D7;
+    padding: 3% 0;
+}
+
+.parrafo {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #EBEBEB;
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+	width: 100%; 
+}
+
+.nav-link {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #87B9D7;
+}
+
+.glow {
+    font-size: 20px;
+    color: #FFFBF0;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff;
+    }
+  }
+
+  .nav-item{
+    padding: 0px 20px 0px 20px;
+  }
+  @media (min-width: 992px) {
+    #hero{
+        /*background-position: left;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 10% 0;
+        background-image: linear-gradient(90deg, rgba(13,27,48,0) 0%, rgba(13,27,48,1) 48%, rgba(13,27,48,1) 100%), url(../img/constructores.jpg);
+    }
+    #porque{
+    /*background-position: left;*/
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center; 
+     padding: 10% 0;
+     background-image: linear-gradient(270deg, rgba(13,27,48,0) 0%, rgba(13,27,48,1) 52%, rgba(13,27,48,1) 100%), url(../img/excavadora.jpg);
+  }
+}
+  section{
+    padding: 5% 0;
+  }
+
+  
+
+  #porque p {
+    margin-right: 8%;
+  }
+ 
+  #reviews {
+    text-align: center;
+ 
+    padding: 10% 5%;
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.review {
+    flex: 0 0 100%;
+    margin: 0 0;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    /*background-color: #0d1b30; -------------------------------CAMBIE ESTO ---------------------------------------------------*/
+    /*padding: 20px;*/
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+    color: #EBEBEB;
+    text-align: center;
+    
+}
+
+.review.active {
+    opacity: 1;
+    
+}
+
+.author {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+.arrows {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2em;
+    margin: 0 10px;
+    color: #F4C245;
+}
+
+.arrow:hover {
+    color: #F4C245;
+}
+
+footer{
+    background-color: #3852A2;
+    padding: 3% 0;
+}
+.p_footer{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #EBEBEB;
+    font-style: italic;
+    text-align: center;
+}
+
+footer a{
+    color: #EBEBEB;
+}
+
+i{
+    font-size: 40px;
+}
+
+.footer-icon i {
+ 
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.footer-icon:hover i {
+  color: #0d1b30;              
+  transform: scale(1.1);        
+}
+
+
+.btn-comprar {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    background-color: #3852A280;
+    color: #EBEBEB;
+    border-radius: 100px;
+    border-color: #BADDF3;
+    border-width: 4px;
+    padding: 12px 70px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    animation: glowbtn 1s ease-in-out infinite alternate;
+
+    box-shadow: inset 0 0 5px #BADDF3,
+                0px 0px 10px 5px #BADDF3;
+}
+
+@keyframes glowbtn {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    }
+    
+    to {
+      box-shadow: 0 0 20px #fff;
+    }
+  }
+
+.btn-comprar:hover{
+    background-color: #BADDF3;
+	color: #3853a2;
+    border-color: #3853a2;
+}
+
+
+iframe{
+    border-radius: 50px;
+}
+
+/*----------------------------------- KIMBERLY MAIRENA -------------------------------------------------------*/
+/*Carousel Equipo*/
+
+
+.oswald {
+font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+#carouselExample{
+    margin-bottom: 8%;
+    
+}
+
+.carousel-control-next, .carousel-control-prev {
+    margin-bottom: 5%;
+}
+
+.container_precios {
+    display: grid;
+    gap: 40px;
+}
+
+.container_precios .card {
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.card_planes {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #679fc6;
+    color: #0d1b30;
+    font-size: 18px;
+    border-radius: 10px;
+    
+}
+
+.btn-informacion {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+	background-color: #3853a2;
+	color: #EBEBEB;
+	border-radius: 100px;
+}
+
+.btn-informacion:hover{
+    background-color: #BADDF3;
+	color: #3853a2;
+    
+}
+
+.container_precios i {
+    margin: 5%;
+    font-size: 28px;
+}
+
+#tutoriales_title {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+/* MEDIA QUERIES PARA DISPOSITIVOS PEQUEÑOS (por debajo de 768px) */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 60px;
+        padding-top: 15%;
+    }
+
+    .subtituloh2,
+    .subtituloh2equipo {
+        font-size: 32px;
+    }
+
+    .subtituloh3 {
+        font-size: 20px;
+    }
+
+    .parrafo,
+    .p_info_equipo {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .btn-comprar {
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+    
+    .p_footer{
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #EBEBEB;
+        font-style: italic;
+        text-align: center;
+    }
+
+    
+
+    i{
+        font-size: 30px;
+    }
+
+    .author {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+}
+    #planes{
+        padding: 6%;
+    }
+
+    .container_equipo {
+        padding: 6%;
+    }
+
+
+
+.wrapper{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+   
+}
+
+.container_equipo{
+    position: relative;
+   /* width: 1250px;
+    height: 500px;*/
+    
+    display: grid;
+    
+    gap: 10px;
+   
+}
+
+.container_equipo .card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+        width: 100%;
+      
+      padding: 15px;
+   
+}
+
+.card-1{
+    background-image:url("../img/p_nisa_darker_blue.png");
+    background-size: cover;
+    
+    background-position: center center;
+}
+
+.card-2{
+    background-image:url("../img/p_mirari_dark_blue.png");
+    background-size: cover;
+   
+    background-position: center center;
+}
+
+.card-3{
+    background-image:url("../img/p_cesar_darker_blue.png");
+    background-size: cover;
+   
+    background-position: center center;
+}
+
+
+.card-4{
+    background-image:url("../img/p_kim_dark_blue.png");
+    background-size: cover;
+ 
+    background-position: center center;
+}
+
+
+.card-5{
+    background-image:url("../img/p_monse_darker_blue.png");
+    background-size: cover;
+  
+    background-position: center center;
+}
+
+.container_equipo .card:nth-child(odd){
+    transform: translateY(0);
+}
+
+.container_equipo .card:nth-child(even){
+    transform: translateY(0);
+}
+
+
+
+.container_equipo .card_content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 25%;
+    color: #fff;
+   
+}
+
+
+.especial{
+    padding-top: 28%;
+}
+
+.name, .group{
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+/*Carousel Equipo*/
+
+.equipo_lista{
+    font-weight: 300;
+    font-size: 24px;
+    list-style: none;
+}
+.equipo_lista_especial{
+    font-weight: 300;
+    font-size: 24px;
+    list-style: none;
+    padding-bottom: 2%;
+}
+
+.name_equipo{
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.subtituloh2equipo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #87B9D7;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.p_info_equipo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #EBEBEB;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#tutoriales_title {
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+
+
+
+/* Fondo oscuro en móvil y comportamiento normal */
+
+
+ 
+  .navbar-collapse {
+    background-color: #3852A2 !important;
+    position: relative;
+  }
+
+  
+#hero{
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center; 
+        padding: 15% 0;
+        background-image:linear-gradient(rgba(13, 27, 48, 0.8)), url(../img/constructores.jpg);
+    }
+    #porque{
+   
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center; 
+     padding: 10% 0;
+     background-image: linear-gradient(rgba(13, 27, 48, 0.8)) , url(../img/excavadora.jpg);
+  }
+ 
+
+
+.collapse.navbar-collapse {
+  transition: all 0.3s ease;
+}
+}
+
+/*PC PC PC PC PC PC PC PC*/
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent !important;
+   
+    top: 0;
+    width: 100%;
+ 
+  }
+  .wrapper{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    place-content: center;
+    padding-top: 4%;
+}
+
+.container_equipo{
+    position: relative;
+    width: 1250px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.container_equipo .card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-1{
+    background-image:url("../img/p_nisa_darker_blue.png");
+    background-size: cover;
+    filter: grayscale(1);  
+    transition: all .3s ease-in-out;
+    background-position: center center;
+}
+
+.card-2{
+    background-image:url("../img/p_mirari_dark_blue.png");
+    background-size: cover;
+    filter: grayscale(1);  
+    transition: all .3s ease-in-out;
+    background-position: center center;
+}
+
+.card-3{
+    background-image:url("../img/p_cesar_darker_blue.png");
+    background-size: cover;
+    filter: grayscale(1);  
+    transition: all .3s ease-in-out;
+    background-position: center center;
+}
+
+
+.card-4{
+    background-image:url("../img/p_kim_dark_blue.png");
+    background-size: cover;
+    filter: grayscale(1);  
+    transition: all .3s ease-in-out;
+    background-position: center center;
+}
+
+
+.card-5{
+    background-image:url("../img/p_monse_darker_blue.png");
+    background-size: cover;
+    filter: grayscale(1);  
+    transition: all .3s ease-in-out;
+    background-position: center center;
+}
+
+.container_equipo .card:nth-child(odd){
+    transform: translateY(10px);
+}
+
+.container_equipo .card:nth-child(even){
+    transform: translateY(-10px);
+}
+
+.container_equipo .card::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.container_equipo .card_content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 25%;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+
+.especial{
+    padding-top: 28%;
+}
+
+.name, .group{
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.container_equipo:has(.card-1:hover){
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.container_equipo:has(.card-2:hover){
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.container_equipo:has(.card-3:hover){
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.container_equipo:has(.card-4:hover){
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container_equipo:has(.card-5:hover){
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover{
+    box-shadow: rgba(0, 0, 0, 0.7) 0px -50px 80px inset;
+    filter: grayscale(0);
+}
+
+.container_equipo .card:hover .card_content{
+    position: absolute;
+    top: 210px;
+    left: 20px;
+    color: #fff;
+}
+
+.container_equipo .card:hover::after{
+    opacity: 0;
+}
+
+/*Carousel Equipo*/
+
+.equipo_lista{
+    font-weight: 300;
+    font-size: 24px;
+    list-style: none;
+}
+.equipo_lista_especial{
+    font-weight: 300;
+    font-size: 24px;
+    list-style: none;
+    padding-bottom: 2%;
+}
+
+.name_equipo{
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.subtituloh2equipo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #87B9D7;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.p_info_equipo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #EBEBEB;
+    text-align: center;
+    padding-top: 5%;
+}
+}

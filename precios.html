@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>ObraControl</title>
+        <link href="img/logo.png" rel="shortcut icon">
+        <script src="https://kit.fontawesome.com/c9daab83f6.js" crossorigin="anonymous"></script>
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'bcm3fvs',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+          </script>
+          
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link href="css/bootstrap-custom.css" rel="stylesheet">
+        
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+    
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" class="img-fluid" alt="logo">
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="las la-bars"></i>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html"> Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow" aria-current="page" href="#">&bull; Consultar Planes</a>
+                              </li> 
+                            <li class="nav-item">
+                              <a class="nav-link" href="equipo.html"> Acerca De</a>
+                            </li>
+                           
+                          </ul>
+                          <!-- <form class="form-inline">
+                            <a href="#" class="btn btn-comprar-navbar">Consultar</a>
+                          </form> -->
+                    </div>
+    
+                </div>
+            </nav>
+        </header>
+
+        <section id="planes">
+            <div class="container">
+                <h1 class="titulo">Nuestros planes</h1>
+                <h3 class="subtituloh3">Descubre nuestras opciones y accede a las herramientas necesarias para optimizar tus procesos en la construcción. 
+                    Escoge según el tamaño y complejidad de tu proyecto.</h3>
+
+                
+                <div class="container_precios">
+                    <div class="row row-cols-4">
+                    <article class="col-lg-3 col-sm-3 col-12 align-items-stretch">
+                        <div class="card card_planes">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="fa-solid fa-pencil"></i><br>Plan mínimo</h4> <br>
+                                    <h5>100 dólares o 2,500 lempiras mensuales</h5> <br>
+                                    <p class="card-text">Max. 10 usuarios <br><br>
+                                    Ideal para ingenieros independientes o empresas pequeñas.</p>
+                                    <a href="#" class="btn btn-informacion">Más información</a>
+                                </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-3 col-sm-3 col-12 align-items-stretch">
+                        <div class="card card_planes">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="fa-solid fa-hammer"></i><br>Plan medio </h4> <br>
+                                    <h5>250 dólares o 6,250 lempiras mensuales</h5><br>
+                                    <p class="card-text">Max. 30 usuarios <br><br>
+                                    Para empresas pequeñas y medianas. </p> <br>
+                                    <a href="#" class="btn btn-informacion mt-auto align-">Más información</a>
+                                </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-3 col-sm-3 col-12 align-items-stretch">
+                        <div class="card card_planes">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="fa-solid fa-screwdriver-wrench"></i><br>Plan máximo</h4> <br>
+                                    <h5>350 dólares o 8,750 lempiras mensuales</h5><br>
+                                    <p class="card-text">Max. 50 usuarios <br><br>
+                                    Para empresas grandes.</p><br><br>
+                                    <a href="#" class="btn btn-informacion mt-auto align-">Más información</a>
+                                </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-3 col-sm-3 col-12">
+                        <div class="card card_planes">
+                                
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="fa-solid fa-toolbox"></i><br>Plan ilimitado</h4> <br>
+                                   <h5>500 dólares o 12,500 lempiras mensuales</h5><br>
+                                     <p class="card-text">Usuarios ilimitados <br><br>
+                                    Experimenta la organización sin límites.</p><br>
+                                    <a href="#" class="btn btn-informacion mt-auto align-">Más información</a>
+                                </div>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <footer id="contacto">
+            <div class="container">
+                <p class="p_footer"> <img src="img/logo.png"> <br>
+                   ™ & © 2025 Somnius Studios, Inc. Todos los derechos reservados.
+                    <br>Somnius Studios y ObraControl son marcas comerciales  <br> o marcas registradas de Somnius Studios, Inc.</p>
+                    <p class="p_footer"> 
+                        <a href="mailto:obracontrolbusiness@gmail.com" class="footer-icon" title="Envíanos un correo"><i class="fa-solid fa-square-envelope"></i></a>  
+                        <a href="https://www.instagram.com/obra_control?utm_source=qr&igsh=MWF3ZmJjM2h1aDd3eg==" class="footer-icon" title="Síguenos en Instagram"><i class="fa-brands fa-square-instagram"></i></a>  
+                        <a href="https://www.facebook.com/share/1F62E4v4my/" class="footer-icon" title="Síguenos en Facebook"><i class="fa-brands fa-square-facebook"></i></a> 
+                       <!--  <a href="https://www.youtube.com/@SomniusStudio/videos"><i class="fa-brands fa-square-youtube"></i></a> -->
+                    </p>
+            </div>
+        </footer>
+
+            <script src="js/jquery.min.js"></script>
+	        <script src="js/bootstrap.min.js"></script>
+	        <script src="js/jquery.fancybox.min.js"> </script>
+	        <script src="js/owl.carousel.min.js"> </script>
+
+            <script src="scripts.js"></script>
+
+           <script>
+            const reviews = document.querySelectorAll('.review');
+        const arrowLeft = document.querySelector('.arrow.left');
+        const arrowRight = document.querySelector('.arrow.right');
+        let currentReview = 0;
+
+        arrowRight.addEventListener('click', () => {
+            currentReview = (currentReview + 1) % reviews.length;
+            updateCarousel();
+        });
+
+        arrowLeft.addEventListener('click', () => {
+            currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+            updateCarousel();
+        });
+
+        function updateCarousel() {
+            reviews.forEach((review, index) => {
+                if (index === currentReview) {
+                    review.classList.add('active');
+                } else {
+                    review.classList.remove('active');
+                }
+            });
+            const offset = currentReview * -100; // Mueve el carrusel dejando algo visible
+            document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+        }
+
+           </script>
+    </body>
+
+
+</html>
