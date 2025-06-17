@@ -73,12 +73,15 @@ header {
   .nav-item{
     padding: 0px 20px 0px 20px;
   }
-  @media (min-width: 992px) {
-    #hero{
-        /*background-position: left;*/
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 10% 0;
+
+
+
+ 
+ #hero{
+     /*background-position: left;*/
+     background-size: contain;
+     background-repeat: no-repeat;
+     padding: 10% 0;
         background-image: linear-gradient(90deg, rgba(13,27,48,0) 0%, rgba(13,27,48,1) 48%, rgba(13,27,48,1) 100%), url(../img/constructores.jpg);
     }
     #porque{
@@ -89,7 +92,7 @@ header {
      padding: 10% 0;
      background-image: linear-gradient(270deg, rgba(13,27,48,0) 0%, rgba(13,27,48,1) 52%, rgba(13,27,48,1) 100%), url(../img/excavadora.jpg);
   }
-}
+
   section{
     padding: 5% 0;
   }
@@ -122,10 +125,7 @@ header {
     margin: 0 0;
     opacity: 0.5;
     transition: opacity 0.5s ease-in-out;
-    /*background-color: #0d1b30; -------------------------------CAMBIE ESTO ---------------------------------------------------*/
-    /*padding: 20px;*/
     border-radius: 10px;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
     color: #EBEBEB;
     text-align: center;
     
@@ -246,9 +246,6 @@ font-family: "Josefin Sans", sans-serif;
 }
 
 
-
-
-
 #carouselExample{
     margin-bottom: 8%;
     
@@ -305,6 +302,17 @@ font-family: "Josefin Sans", sans-serif;
     padding-bottom: 2%;
 }
 
+
+.p_info_equipo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #EBEBEB;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
 /* MEDIA QUERIES PARA DISPOSITIVOS PEQUEÑOS (por debajo de 768px) */
 @media (max-width: 768px) {
     .titulo {
@@ -359,45 +367,51 @@ font-family: "Josefin Sans", sans-serif;
         padding: 6%;
     }
 
-    .container_equipo {
-        padding: 6%;
-    }
 
+#tutoriales_title {
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
 
+ .wrapper {
+    height: auto;
+    padding: 5%;
+  }
 
-.wrapper{
+  .container_equipo {
     width: 100%;
-    height: 70vh;
-    display: grid;
-   
-}
-
-.container_equipo{
-    position: relative;
-   /* width: 1250px;
-    height: 500px;*/
-    
-    display: grid;
-    
-    gap: 10px;
-   
-}
-
-.container_equipo .card{
-    position: relative;
-    overflow: hidden;
+    height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    gap: 20px;
+  }
 
-        width: 100%;
-      
-      padding: 15px;
-   
-}
+  .container_equipo .card {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
 
-.card-1{
+  .container_equipo .card_content {
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+    padding-top: 0;
+    position: absolute;
+    color: #fff;
+  }
+
+  .name_equipo {
+    font-size: 26px;
+  }
+
+  .equipo_lista {
+    font-size: 18px;
+    list-style: none;
+  }
+
+  .card-1{
     background-image:url("../img/p_nisa_darker_blue.png");
     background-size: cover;
     
@@ -434,64 +448,6 @@ font-family: "Josefin Sans", sans-serif;
     background-position: center center;
 }
 
-.container_equipo .card:nth-child(odd){
-    transform: translateY(0);
-}
-
-.container_equipo .card:nth-child(even){
-    transform: translateY(0);
-}
-
-
-
-.container_equipo .card_content{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding-top: 25%;
-    color: #fff;
-   
-}
-
-
-.especial{
-    padding-top: 28%;
-}
-
-.name, .group{
-    font-family: "Josefin Sans", sans-serif;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-}
-
-
-/*Carousel Equipo*/
-
-.equipo_lista{
-    font-weight: 300;
-    font-size: 24px;
-    list-style: none;
-}
-.equipo_lista_especial{
-    font-weight: 300;
-    font-size: 24px;
-    list-style: none;
-    padding-bottom: 2%;
-}
-
-.name_equipo{
-    font-weight: 500;
-    font-size: 38px;
-}
-
-.subtituloh2equipo{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 500;
-    font-size: 50px;
-    color: #87B9D7;
-    text-align: center;
-    padding-bottom: 2%;
-}
-
 .p_info_equipo{
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
@@ -501,24 +457,11 @@ font-family: "Josefin Sans", sans-serif;
     padding-top: 5%;
 }
 
-#tutoriales_title {
-    padding-top: 15%;
-    padding-bottom: 2%;
-}
-
-
-
-
-/* Fondo oscuro en móvil y comportamiento normal */
-
-
- 
   .navbar-collapse {
     background-color: #3852A2 !important;
     position: relative;
   }
 
-  
 #hero{
         
         background-size: cover;
@@ -541,18 +484,98 @@ font-family: "Josefin Sans", sans-serif;
 .collapse.navbar-collapse {
   transition: all 0.3s ease;
 }
+
 }
 
-/*PC PC PC PC PC PC PC PC*/
-@media (min-width: 992px) {
-  .navbar {
-    background-color: transparent !important;
-   
-    top: 0;
-    width: 100%;
- 
+@media (max-width:1000px) {
+    .wrapper {
+    height: auto;
+    padding: 5%;
   }
-  .wrapper{
+
+  .container_equipo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container_equipo .card {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+
+  .container_equipo .card_content {
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+    padding-top: 0;
+    position: absolute;
+    color: #fff;
+  }
+
+  .name_equipo {
+    font-size: 26px;
+  }
+
+  .equipo_lista {
+    font-size: 18px;
+    list-style: none;
+  }
+
+  .card-1{
+    background-image:url("../img/p_nisa_darker_blue.png");
+    background-size: cover;
+    
+    background-position: center center;
+}
+
+.card-2{
+    background-image:url("../img/p_mirari_dark_blue.png");
+    background-size: cover;
+   
+    background-position: center center;
+}
+
+.card-3{
+    background-image:url("../img/p_cesar_darker_blue.png");
+    background-size: cover;
+   
+    background-position: center center;
+}
+
+
+.card-4{
+    background-image:url("../img/p_kim_dark_blue.png");
+    background-size: cover;
+ 
+    background-position: center center;
+}
+
+
+.card-5{
+    background-image:url("../img/p_monse_darker_blue.png");
+    background-size: cover;
+  
+    background-position: center center;
+}
+
+.p_info_equipo{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #EBEBEB;
+    text-align: center;
+    padding-top: 5%;
+}
+}
+
+
+@media (min-width: 1000px) {
+    .wrapper{
     width: 100%;
     height: 70vh;
     display: grid;
@@ -724,12 +747,13 @@ font-family: "Josefin Sans", sans-serif;
     padding-bottom: 2%;
 }
 
-.p_info_equipo{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    color: #EBEBEB;
-    text-align: center;
-    padding-top: 5%;
 }
-}
+
+
+
+ 
+
+  
+
+
+
